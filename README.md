@@ -13,7 +13,7 @@ Une fois installé, l'exploration du code est très simple, et est commenté.
 Créer un dossier pour votre projet.
 
 Récupération de l'archive à l'adresse:
-[https://github.com/FranckBlanchard/php-slim3-skeleton](https://github.com/FranckBlanchard/php-slim3-skeleton).
+[https://github.com/FranckBlanchard/php-slim3-skeleton](https://github.com/FranckBlanchard/php-slim3-skeleton/archive/master.zip).
     
 Décompresser l'archive dans le dossier de votre projet.
 
@@ -60,6 +60,8 @@ Dossier public ou pointera le serveur.
 ## A faire
 
 
-   * Améliorer les commentaires du code.  
-   * Utiliser des controlleurs pour les routes.  
-   * Améliorer la documentation.  
+* Améliorer les commentaires du code.  
+   
+* Utiliser des controlleurs pour les routes.  
+
+* Améliorer la documentation.  
