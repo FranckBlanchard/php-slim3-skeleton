@@ -5,7 +5,7 @@ namespace App\Controllers;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Psr\Http\Message\ResponseInterface as Response;
 
-class PagesControllers extends Controllers {
+class PagesControllers extends Controller {
 
     public function home(Request $request, Response $response) {
         var_dump($this->container);

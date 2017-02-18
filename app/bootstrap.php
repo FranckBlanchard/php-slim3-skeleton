@@ -21,6 +21,7 @@ $app = new App($settings);
 
 /** Initialisation des dépendances */
 require __DIR__ . '/dependencies.php';
+var_dump($container);exit;
 
 /** Initialisation des routes */
 require __DIR__ . '/routes.php';

@@ -3,7 +3,7 @@
 /** Récupération du container */
 $container = $app->getContainer();
 
-/** Twig view dependency */
+/** Initialisation des dépendances de Twig view */
 $container['view'] = function ($container) {
 
     $cf = $container->get('settings')['view'];

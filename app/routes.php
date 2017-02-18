@@ -13,5 +13,5 @@ $app->get('/', function ($request, $response, $args) {
 
 /** Pages utilisant des controlleurs*/
 
-//$app->get('/contact', \App\Controllers\PagesControllers::class.':getcontact');
+$app->get('/home', \App\Controllers\PagesControllers::class.':home');
 
