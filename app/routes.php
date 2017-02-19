@@ -10,8 +10,12 @@ use Psr\Http\Message\ResponseInterface as Response;
 $app->get('/', function ($request, $response, $args) {
     return $this->view->render($response, 'home.html.twig');
 })->setName('home');
+$app->get('/contact',function ($request, $response, $args) {
+return $this->view->render($response, 'contact.html.twig');
+
+})->setName('contact');
 
 /** Pages utilisant des controlleurs*/
 
-$app->get('/home', \App\Controllers\PagesControllers::class.':home');
+//$app->get('/contact', App\Controllers\PagesControllers::class.'getContact');
 

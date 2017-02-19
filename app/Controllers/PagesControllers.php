@@ -8,14 +8,13 @@ use Psr\Http\Message\ResponseInterface as Response;
 class PagesControllers extends Controller {
 
     public function home(Request $request, Response $response) {
-        var_dump($this->container);
-//        $this->container->view->render($response,'home.html.twig');
 //        $response->getBody()->write('Accueil');
     }
 
     public function getContact(Request $request, Response $response) {
 
-        $response->getBody()->write('Contact');
+//        $response->getBody()->write('Contact');
+        $this->container->view->render($response, 'home.html.twig');
     }
 
 }

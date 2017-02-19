@@ -13,9 +13,7 @@ Une fois installé, l'exploration du code est très simple, et est commenté.
 Créer un dossier pour votre projet.
 
 Récupération de l'archive à l'adresse:
-[https://github.com/FranckBlanchard/php-slim3-skeleton](https://github.com/FranckBlanchard/php-slim3-skeleton/archive/master.zip).
-    
-Décompresser l'archive dans le dossier de votre projet.
+[https://github.com/FranckBlanchard/php-slim3-skeleton](https://github.com/FranckBlanchard/php-slim3-skeleton/archive/master.zip), et décompression de l'archive dans le dossier de votre projet.
 
 Faire un 
 *composer update*
@@ -56,6 +54,11 @@ Dossier contenants les fichiers de configurations pour l'application
 *public*
 
 Dossier public ou pointera le serveur.
+
+## Lien utile
+
+[Slim framework]( http://www.slimframework.com/)  
+[twig](http://twig.sensiolabs.org/)
 
 ## A faire
 
