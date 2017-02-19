@@ -16,7 +16,8 @@ $container['view'] = function ($container) {
 
     return $view;
 };
+
 /** Initialisation du controlleur PagesControllers */
 $container['PagesControllers'] = function ($container) {
-    return new App\Controllers\PagesController($container);
+    return new App\Controllers\PagesControllers($container);
 };
