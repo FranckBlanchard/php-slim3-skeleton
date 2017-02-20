@@ -5,7 +5,6 @@
  */
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Psr\Http\Message\ResponseInterface as Response;
-use App\Controllers\PagesControllers;
 
 /** Page d'accueil, avec fonction anonyme */
 $app->get('/', function (Request $request, Response $response, $args) {

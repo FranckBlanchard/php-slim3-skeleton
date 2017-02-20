@@ -9,13 +9,10 @@ use App\Controllers\Controller;
 class PagesControllers extends Controller {
 
     public function home(Request $request, Response $response) {
-//        $response->getBody()->write('Accueil');
         $this->container->view->render($response, 'home.html.twig');
     }
 
     public function getContact(Request $request, Response $response) {
-
-//        $response->getBody()->write('Contact');
         $this->container->view->render($response, 'contact.html.twig');
     }
     
