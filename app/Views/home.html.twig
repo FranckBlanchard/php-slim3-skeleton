@@ -1,20 +1,22 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
-    <h1>php-slim3-skeleton.</h1>
+    <div class="container">
+        <h1>php-slim3-skeleton.</h1>
 
-    <h2>Prérequis</h2>
-    <p>Avoir <b>php</b> d'installé. On peut se servir du serveur interne de <b>php</b>.</p>
-    <h2>Installation</h2>
-    <ul>
-        <li>Créer un dossier pour votre projet.</li>
-        <li>Télécharger l'archive à l'adresse :
-            <a href="https://github.com/FranckBlanchard/php-slim3-skeleton">https://github.com/FranckBlanchard/php-slim3-skeleton/archive/master.zip</a>,puis décompresser l'archive dans le dossier de votre projet.</li>    
-        <li>Faire un <em>composer update</em> : met à jour <b>Slim3</b> et toutes ses dépendance.</li>
-        <li>Démarrer le serveur de <b>php</b> avec la commande suivante : <em>php" "-S" "localhost:8080" "-t" "public".</em></li>
-        <li>Démarrer votre navigateur avec la commande : <em>http://localhost:8080/</em>.</li>
-    </ul>
-    <h3>Personalisation</h3>
-    Les options sont a modifier ou a ajouter dans le fichier <em>app/setting.php</em>.
-    Les routes sont a définir dans le fichier <em>app/routes.php</em>.    
+        <h2>Prérequis</h2>
+        <p>Avoir <b>php</b> d'installé. On peut se servir du serveur interne de <b>php</b>.</p>
+        <h2>Installation</h2>
+        <ul>
+            <li>Créer un dossier pour votre projet.</li>
+            <li>Télécharger l'archive à l'adresse :
+                <a href="https://github.com/FranckBlanchard/php-slim3-skeleton">https://github.com/FranckBlanchard/php-slim3-skeleton/archive/master.zip</a>,puis décompresser l'archive dans le dossier de votre projet.</li>    
+            <li>Faire un <em>composer update</em> : met à jour <b>Slim3</b> et toutes ses dépendance.</li>
+            <li>Démarrer le serveur de <b>php</b> avec la commande suivante : <em>php" "-S" "localhost:8080" "-t" "public".</em></li>
+            <li>Démarrer votre navigateur avec la commande : <em>http://localhost:8080/</em>.</li>
+        </ul>
+        <h3>Personalisation</h3>
+        Les options sont a modifier ou a ajouter dans le fichier <em>app/setting.php</em>.
+        Les routes sont a définir dans le fichier <em>app/routes.php</em>. 
+    </div>
 {% endblock %}
