@@ -14,7 +14,7 @@ return [
             'twig' => [
                 'cache' => false
             ]
-        ],
+        ]
     ]
 ];
 

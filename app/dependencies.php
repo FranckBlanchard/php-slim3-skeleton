@@ -17,6 +17,12 @@ $container['view'] = function ($container) {
     return $view;
 };
 
+/** Initialisation des données metas pour nos pages */
+$container['metas']=[
+    'title'=>'S3S',
+    'description'=>'Une application web minimale avec le micro-framework Slim3.',
+    'keywords'=>'slim3, micro-framework'
+    ];
 /** Initialisation du controlleur PagesControllers */
 $container['PagesControllers'] = function ($container) {
     return new App\Controllers\PagesControllers($container);

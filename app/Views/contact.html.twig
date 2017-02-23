@@ -4,10 +4,34 @@
 {% block content %}
     <div class="container">
         <h2>Nous contacter.</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum nunc lectus, sed tincidunt turpis ullamcorper ut. Vivamus pulvinar consectetur lectus, sed egestas sem semper in. Nullam at ultricies nunc. Nunc vel vestibulum lectus. Morbi eu nisi quis diam ornare malesuada eu ut sapien. Morbi ultrices, magna vel cursus posuere, ligula magna convallis nisl, ut varius risus lacus et urna. In euismod sollicitudin egestas. Sed convallis magna aliquet consectetur dictum. Fusce dignissim efficitur metus. Integer laoreet mi ipsum, sit amet efficitur enim fringilla id. </p>
-        <ul>
-            <li><a href="https://github.com/FranckBlanchard/php-slim3-skeleton">https://github.com/FranckBlanchard/php-slim3-skeleton</a></li>
-            <li>Email:</li>
-        </ul>
+        <p>Parlez nous de votre projet sans tarder, ou obtenez un rendez vous.</p>
+    </div>
+    <div class="container">
+        <form action="" method="post">
+            <div class="form-group">
+                <label for="name">Votre nom :</label>
+                <input type="text" class="form-control" name="name" id="name"/>
+            </div>
+            <div class="form-group">
+                <label for="subject">Sujet de votre message :</label>
+                <input type="text" class="form-control" name="subject" id="subject"/>
+            </div>
+            <div class="form-group">
+                <label for="email">Votre adresse de courriel :</label>
+                <input type="text" class="form-control" name="email" id="email"/>
+            </div>
+            <div class="form-group">
+                <label for="tel">Votre numéro de téléphone :</label>
+                <input type="text" class="form-control" name="tel" id="tel"/>
+            </div>
+            <div class="form-group">
+                <label for="message">Votre message :</label>
+                <textarea type="text" class="form-control" name="message" id="message"/></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" />
+
+            </div>
+        </form>
     </div>
 {% endblock %}
