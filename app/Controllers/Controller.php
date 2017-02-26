@@ -11,4 +11,8 @@ class Controller {
         $this->container = $container;
     }
 
+    public function render(Response $response, $file, $param = []) {
+        $this->container->view->render($response, $file, $param);
+    }
+
 }

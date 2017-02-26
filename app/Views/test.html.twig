@@ -1,0 +1,13 @@
+{# Sous template Twig #}
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <h1>Page de test</h1>
+    <p>Cette page affiche les différentes valeurs de configurations, et ne doit être utilisé que pendant le developpement.</p>
+    <h2>Metas tag</h2>
+    <ul>
+        <li>Titles : {{title}}</li>
+        <li>Description : {{description}}</li>
+        <li>Autor : {{autor}}</li>
+    </ul>
+{% endblock %}
