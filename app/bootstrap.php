@@ -39,10 +39,11 @@ $file = $configPath . 'app.yml';
  */
 $configApp = Yaml::parse(file_get_contents($file));
 /**
- * Chargement des réglages de l'application en fonction du mode de fonctionnement
+ * Chargement des réglages de l'application en fonction du mode de fonctionnement définit dans
+ * le fichier app/Config/app.yml
  */
 if ($configApp['mode'] == 'dev') {
-    ini_set("display_errors", 1); 
+    ini_set("display_errors", 1);
     $settings = require __DIR__ . '/settings.dev.php';
 } else {
     $settings = require __DIR__ . '/settings.prod.php';
@@ -52,6 +53,11 @@ if ($configApp['mode'] == 'dev') {
  * Création de l'instance Slim  
  */
 $app = new App($settings);
+
+/**
+ * Ajout du middleware SessionMiddleware
+ */
+$app->add(new \App\Middleware\SessionMiddleware());
 
 /**
  * Initialisation des dépendances de l'application
