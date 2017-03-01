@@ -2,12 +2,28 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
-    <h1>Page de test</h1>
-    <p>Cette page affiche les différentes valeurs de configurations, et ne doit être utilisé que pendant le developpement.</p>
-    <h2>Metas tag</h2>
-    <ul>
-        <li>Titles : {{title}}</li>
-        <li>Description : {{description}}</li>
-        <li>Autor : {{autor}}</li>
-    </ul>
+    <div class="container">
+        <h1>Informations de développement.</h1>
+        <p>Cette page affiche les différentes valeurs de configurations, et ne doit être utilisé que pendant le developpement.</p>
+        <h2>Nom de l'application</h2>
+        <ul>
+            <li>Nom long :</li>
+            <li>Nom Cour :</li>
+        </ul>
+        <h2>Les metas tag</h2>
+        <p>Ces valeurs sont celles soumises aux vues, par défaut.</p>
+        <ul>
+            <li>Titles : {{title}}</li>
+            <li>Description : {{description}}</li>
+            <li>Autor : {{autor}}</li>
+        </ul>
+        <h2>Serveur SMTP</h2>
+        <p>Ces valeurs sont utilisées pour l'envoie des informations venant du formulaire.</p>
+        <ul>
+            <li>Serveur : </li>
+            <li>Login :</li>
+            <li>Mot de passe :</li>
+        </ul>
+        
+    </div>
 {% endblock %}

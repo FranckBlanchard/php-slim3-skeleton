@@ -1,0 +1,15 @@
+# app.yml
+# Fichier de configuration de l'application
+#
+# Mode de fonctionnement dev (développement)ou prod (production)
+mode: dev
+# Nom court de l'application
+shortName: S3S
+# Nom long de l'application
+longName: Slim 3 Skeleton
+# Meta données pour l'application
+metas:
+        title: S3S
+        description: S3S est une application web minimale basé sur le micro-framework Slim3.
+        keywords: slim3, micro-framework
+            

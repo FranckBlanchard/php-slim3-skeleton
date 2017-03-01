@@ -1,9 +1,21 @@
 <?php
 
-/** Récupération du container */
+/**
+ * dependencies.php
+ * 
+ * Ce fichier initialise les dépendances de l'application.
+ * 
+ * @author Franck Blanchard
+ * @copyright 2017 Franck Blanchard
+ */
+/**
+ * @var objet container de Slim
+ */
 $container = $app->getContainer();
 
-/** Initialisation des dépendances de Twig view */
+/**
+ * Initialisation des dépendances de Twig view 
+ */
 $container['view'] = function ($container) {
 
     $cf = $container->get('settings')['view'];
@@ -17,20 +29,21 @@ $container['view'] = function ($container) {
     return $view;
 };
 
-/** Initialisation des données metas pour nos pages */
-$container['metas']=[
-    'title'=>'S3S',
-    'description'=>'S3S est une application web minimale basé sur le micro-framework Slim3.',
-    'keywords'=>'slim3, micro-framework',
-    'autor'=>'Franck Blanchard'
-    ];
+/**
+ * Initialisation des données metas pour nos pages 
+ */
+$container['metas'] = $configApp['metas'];
 
-/** Initialisation du controlleur PagesControllers */
+/**
+ * Initialisation du controlleur de page PagesControllers 
+ */
 $container['PagesController'] = function ($container) {
     return new App\Controllers\PagesController($container);
 };
 
-/** Initialisation du controlleur de page ContactController */
-$container['ContactController']=  function ($container){
+/** 
+ * Initialisation du controlleur de page ContactController 
+ */
+$container['ContactController'] = function ($container) {
     return new App\Controllers\ContactController($container);
 };
