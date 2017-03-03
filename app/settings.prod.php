@@ -1,9 +1,17 @@
 <?php
 
+/**
+ * setting.prod.php
+ * 
+ * Options de configuration en mode production, de Slim3
+ * 
+ * @author Franck Blanchard
+ * @copyright (c) 2017, Franck Blanchard
+ */
 return [
 
     'settings' => [
-        /** 
+        /**
          * Permet a Slim d'afficher les erreurs. 
          * et a false pour la production
          */
